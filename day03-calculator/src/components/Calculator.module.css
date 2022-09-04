@@ -1,0 +1,104 @@
+.wapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 16rem;
+    margin: 5rem;
+    border-radius: 15px;
+
+    background-color: black;
+
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    
+    width: 14rem;
+    padding-top: 2rem;
+
+    /* background-color: var(--gray-900); */
+    color: var(--gray-300);
+    overflow: hidden;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* buttons */
+
+.buttonsDarkGray{
+    width: 50px;
+    height: 50px;
+    border-radius: 20rem;
+
+    background-color: var(--gray-600);
+    color: var(--gray-300);
+
+    font-size: 20px;
+}
+
+.buttonsLightGray{
+    width: 50px;
+    height: 50px;
+    border-radius: 20rem;
+
+    background-color: var(--gray-300);
+
+    font-size: 20px;
+}
+
+.buttonsOrange{
+    width: 50px;
+    height: 50px;
+    border-radius: 20rem;
+
+    background-color: var(--orange-300);
+    color: white;
+
+    font-size: 20px;
+}
+
+.span2{
+    grid-column: span 2;
+    border-radius: 2rem;
+
+    background-color: var(--gray-600);
+    color: var(--gray-300);
+
+    font-size: 20px;
+}
+
+/* hover */
+
+.buttonsOrange:hover{
+    background-color: var(--orange-500);
+}
+
+.buttonsLightGray:hover{
+    background-color: var(--gray-400);
+} 
+
+.buttonsDarkGray:hover{
+    background-color: var(--gray-800);
+}  
+
+.span2:hover{
+    background-color: var(--gray-800);
+}
